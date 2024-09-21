@@ -1,0 +1,26 @@
+{
+  "name": "waforwarder",
+  "version": "1.0.0",
+  "description": "forward telegram to WhatsApp",
+  "main": "watg.js",
+  "scripts": {
+    "start": "node watg.js"
+  },
+  "author": "ankitkumarbh",
+  "license": "MIT",
+  "dependencies": {
+    "@whiskeysockets/baileys": "latest",
+    "gopd": "latest",
+    "qrcode-terminal": "latest",
+    "node-telegram-bot-api": "latest",
+    "node-cache": "latest",
+    "link-preview-js": "latest",
+    "open-graph-scraper": "latest",
+    "jimp": "^0.16.1",
+    "whatsapp-web.js": "latest",
+    "puppeteer-core": "latest",
+    "tough-cookie": "latest",
+    "axios": "latest",
+    "axios-cookiejar-support": "latest"
+  }
+}

@@ -1,0 +1,100 @@
+{
+ "name": "WhatsApp-Forwarder",
+ "description": "An advanced Telegram to WhatsApp Forwarder",
+ "logo": "https://telegra.ph/file/0b1d5cb8deeec7a506154.jpg",
+ "keywords": [
+  "Tele",
+  "modular",
+  "productivity"
+ ],
+ "repository": "https://github.com/ankitkumarbh/Tele-Bot/",
+ "website": "https://github.com/ankitkumarbh",
+ "success_url": "https://github.com/ankitkumarbh",
+ "buildpacks": [
+     {
+         "url": "heroku/python"
+     },
+     {
+         "url": "heroku/nodejs"
+     },
+     {
+         "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+     }
+ ],
+ "env": {
+  "ENV": {
+   "description": "Setting this to ANYTHING will enable heroku.",
+   "value": "ANYTHING"
+  },
+  "TEMP_DOWNLOAD_DIRECTORY": {
+   "description": "Where downloaded files will go.",
+   "value": "./userbots/DOWNLOADS/",
+   "required": false
+  },
+   "API_ID": {
+   "description": "Used to invoke commands, leave blank for default, (dot)",
+   "value": "6632200",
+   "required": true
+  },  
+   "API_HASH": {
+   "description": "Used to invoke sudo commands, leave blank for default",
+   "value": "2cfb4d66042b0461a897ed2bf3eb99b4",
+   "required": true
+  },
+   "LOG_CHANNEL": {
+   "description": "LOG CHANNEL",
+   "value": "-1001368957684",
+   "required": false
+  },
+   "GIT_REPO": {
+   "description": "Must Enter Repository for updater works",
+   "value": "",
+   "required": false
+  },
+   "REPO_URL": {
+   "description": "Must Enter Repository for updater works",
+   "value": "",
+   "required": true
+  },
+   "REPO_URL2": {
+   "description": "Must Enter 2nd Repository for updater works",
+   "value": "",
+   "required": false
+  },
+  "HEROKU_API_KEY": {
+   "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API.Required for updater to work.",
+   "value": "",
+   "required": true
+  },  
+  "HEROKU_API_KEY2": {
+   "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API2.Required for updater to work.",
+   "value": "",
+   "required": false
+  },  
+  "SUDO_USERS": {
+   "description": "Users you want to give access to your bot. (Don't allow unknown people)",
+   "value": "",
+   "required": false
+  },
+  "HEROKU_APP_NAME": {
+   "description": "The Value of App Name you filled in right on top.Required for updater to work.",
+   "value": "",
+   "required": true
+  },
+  "HEROKU_APP_NAME2": {
+   "description": "The Value of 2nd App Name you filled in right on top.Required for updater to work.",
+   "value": "",
+   "required": false
+  },
+  "OWNER_ID": {
+   "description": "Your Telegram Profile id. (not @username). ",
+   "value": "859187586",
+   "required": false
+  },  
+  "TZ": {
+   "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
+   "value": "Asia/Kolkata",
+   "required": false
+  }
+ }
+}
